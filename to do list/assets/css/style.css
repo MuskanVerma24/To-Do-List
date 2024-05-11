@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    background-color: rgb(60, 103, 196);
+    width: 100%;
+    min-height: 800px;
+    padding-top: 200px;
+}
+.main{
+    width: 30%;
+    height: auto;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 10px;
+}
+.box1{
+    width: 100%;
+    height: 90px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.box1 p{
+    color: red;
+    visibility:hidden;
+}
+li{
+    list-style: none;
+    padding: 10px 20px 10px 70px;
+    font-weight:500;
+    position: relative;
+    cursor: pointer;
+}
+li::before,.change::before{
+    content:" ";
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid rgb(32, 47, 215);
+}
+.change::before{
+    background: rgb(32, 47, 215);
+}
+.change{
+    color: #b9c1f7;
+}
+li span{
+    position: absolute;
+    top: 5px;
+    right: 50px;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    color: #3849ed;
+    line-height: 25px;
+    text-align: center;
+}
+li span:hover{
+    background-color: #2992ef;
+    border-radius: 7px;
+    color: #fff;
+}
+.input-task{
+    width: 75%;
+    height: 25px;
+    border: none;
+    border-bottom: 3px solid #e2e5fa;
+}
+h1{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background: rgb(62, 60, 196);
+    color: #fff;
+    box-sizing: border-box;
+    padding:30px  10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.box1 button{
+    background: #2992ef;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    margin: 10px;
+    padding: 10px 20px;
+}
+.box1 button:hover{
+    background: #3849ed;
+    cursor: pointer;
+}
+
+.box2{
+    padding-bottom: 20px;
+}
+
+.input-task:focus-visible{
+    outline: none;
+}
+
+@media screen and (max-width:1370px) {
+    .main{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:1030px) {
+    .main{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:830px) {
+    .main{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .main{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .main{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:460px) {
+    .box1 button {
+        width: 90%;
+    }
+    .input-task {
+        width: 90%;
+    }
+    .box1 {
+        height: 120px;
+    }
+    li span{
+        right: 20px;
+    }
+}
